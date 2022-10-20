@@ -1,0 +1,55 @@
+article.filter {
+    width: 90%;
+    margin: auto;
+    border-radius: 8px;
+    padding: .5rem 0;
+}
+
+article.filter.dark {
+    background: hsl(235, 24%, 19%);
+}
+
+
+article.filter.dark button {
+    color: #fff;
+}
+
+
+article.filter.light {
+    background: #fff;
+}
+
+article.filter ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+article.filter ul li {
+    margin: 0 .5rem;
+}
+
+
+article.filter ul li button {
+   border: none;
+   background: transparent;
+   font-size: 17px;
+   font-family: 'Josefin sans', sans-serif;
+}
+
+
+article.filter ul li button.dark {
+    color: rgba(255, 255, 255, 0.496);
+ }
+
+ article.filter ul li button.light {
+    color: #000;
+ }
+
+article.filter ul li button.active {
+    color: hsl(220, 98%, 61%);
+    font-weight: 700;
+}

@@ -1,0 +1,52 @@
+.input-wrapper {
+    width: 80%;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    transition: all .2s ease-in;
+}
+
+.input-wrapper.dark {
+    background: hsl(235, 24%, 19%);
+}
+
+.input-wrapper.light {
+    background: #fff;
+}
+
+.round {
+    border: 2px solid hsl(0, 0%, 38%);
+    border-radius: 50%;
+    height: 30px;
+    margin: 0 .2rem 0 0;
+    color: hsl(0, 0%, 48%);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.input-wrapper input[type="text"] {
+    background: transparent;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+}
+
+.input-wrapper input[type="text"]:focus {
+    outline: none;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .input-wrapper {
+        width: 600px;
+    }
+}

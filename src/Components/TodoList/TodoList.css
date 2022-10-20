@@ -1,0 +1,166 @@
+article.todo-list {
+    list-style: none;
+    padding: 0;
+    border-radius: 8px;
+    width: 90%;
+    margin: 1.5rem auto;
+    box-shadow: rgba(122, 122, 122, 0.2) 0px 8px 24px;
+}
+
+article.todo-list.dark {
+  background: hsl(235, 24%, 19%);
+}
+
+article.todo-list.light {
+  background: #fff;
+}
+
+article.todo-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+article.todo-list ul li .content {
+    padding: 1.5rem 1rem;
+    color: rgba(255, 255, 255, 0.734);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    transition: all .2s ease-in;
+}
+
+article.todo-list ul li .content.dark {
+  background: hsl(235, 24%, 19%);
+}
+
+
+article.todo-list ul li .content.light {
+  background: #fff;
+}
+
+article.todo-list ul li hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: rgba(255, 255, 255, 0.324);
+    padding: 0;
+    margin: 0;
+}
+
+article.todo-list .bottom-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    transition: all .2s ease-in;
+}
+
+article.todo-list .bottom-list.dark,
+article.todo-list .bottom-list.dark button {
+  color: rgba(255, 255, 255, 0.324);
+}
+
+article.todo-list .bottom-list.light
+article.todo-list .bottom-list.light button {
+  color: #000;
+}
+
+
+article.todo-list .bottom-list button{
+    border: none;
+    background: transparent;
+    font-family: 'Josefin sans', sans-serif;
+    font-size: 1em;
+    transition: all .2s ease-in-out;
+}
+
+
+/*INPUT TYPE CHECKBOX*/
+.b-contain input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .b-contain span {
+    line-height: 1.5;
+    font-size: 1.1em;
+    margin: 0 0 0 .5rem;
+    font-family: inherit;
+  }
+  
+  .b-contain {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+  }
+  
+  .b-contain input[type="checkbox"] ~ .b-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.7rem;
+    width: 1.7rem;
+    background: transparent;
+    transition: background 250ms;
+    border: 1px solid #94a3b8;
+    border-radius: 10rem;
+  }
+  
+  .b-contain input[type="checkbox"] ~ .b-input::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 10px;
+    top: 4px;
+    width: 0.27rem;
+    height: 0.75rem;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transition: background 250ms;
+    transform: rotate(45deg);
+  }
+  
+  .b-contain input[type="checkbox"]:disabled ~ .b-input::after {
+    border-color: hsl(235, 21%, 11%);
+  }
+  
+  .b-contain input:checked ~ .b-input::after {
+    display: block;
+  }
+  
+  .b-contain:hover input[type="checkbox"]:not([disabled]) ~ .b-input,
+  .b-contain input[type="checkbox"]:focus ~ .b-input {
+    background: hsl(235, 21%, 11%);
+    border: 2px solid #64748ba2;
+  }
+  
+  .b-contain input:focus ~ .b-input {
+    box-shadow: 0 0 0 2px #60a5fa;
+  }
+  
+  .b-contain input[type="checkbox"]:checked ~ .b-input {
+    background: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    border-color: #1d4ed8;
+  }
+  
+  .b-contain input[type="checkbox"]:disabled ~ .b-input{
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .b-contain:hover input[type="checkbox"]:not([disabled]):checked ~ .b-input,
+  .b-contain input[type="checkbox"]:checked:focus ~ .b-input {
+    background: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  }
+
+
+
+@media screen and (min-width: 1440px) {
+  article.todo-list {
+      width: 640px;
+  }
+}

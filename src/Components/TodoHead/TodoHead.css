@@ -1,0 +1,25 @@
+.title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto 2rem;
+}
+
+.title-block h1 {
+    color: #fff;
+    letter-spacing: .8rem;
+}
+
+.title-block button {
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .title-block {
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+}
